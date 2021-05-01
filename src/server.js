@@ -22,8 +22,11 @@ const router = express.Router();
 router.get("/", (req, res)=>{
     res.render("index.html")
 })
-
 app.use(router)
+
+// statics
+app.use(express.static(path.join(__dirname, "public")))
+
 
 // port
 app.listen(config.api.port, ()=>{

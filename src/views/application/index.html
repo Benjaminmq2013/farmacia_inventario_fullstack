@@ -1,0 +1,219 @@
+
+<section id="seleccion" class="no-display">
+  <div class="ticket_container_prueba">
+
+    <!--ESTILOS PARA EL TICKET (CSS)-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+    <!--DISEÑO DEL TICKET-->
+    <div class="ticket_wrapper">
+      <figure class="ticket_logo">
+         <img src="./assets/estetoscopio_icon.png" alt="">
+        </figure>
+
+        <div class="fecha_venta">
+          <h6 class="ticket_title text-center">TICKET DE VENTA</h6>
+         <p class="text-center ticket_location">El Triunfo</p>
+         <p class="ticket_date text-center">fecha:</p>
+        </div>
+
+        
+        <div class="detalles_venta">                                            
+         <div class="cant_container">
+           <h6 class="text-start">CANT</h6>
+          </div>
+
+          <div class="prod_container">
+            <h6 class="">PRODUCTO</h6>
+         </div>
+         
+         <div class="prec_container">
+           <h6 class="text-end">$$</h6>
+          </div>                                            
+     </div>
+     
+     
+     <div class="buying_wrapper">
+       <div class="cuenta_1"></div> <!--Primer checkpoint para añadir productos-->
+       
+     </div>
+     
+     
+     <div class="facturacion_wrapper">
+       <div class="facturacion_ticket">
+
+             <div class="facturacion_titulo">
+               <p">TOTAL</p>
+             </div>
+             <div class="total">
+                 <p id="total_compra">$num</p>
+                </div>
+                
+         </div>
+         
+         <div class="ticket_footer">
+           <p class="ticket_agradecimientos">¡GRACIAS POR SU <br> COMPRA!</p>
+           
+           <p class="ticket_el_cielo">Farmacia El Cielo</p>
+          </div>
+        </div>
+        
+        
+      </div>
+
+      
+      
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="shortcut icon" href="./assets/estetoscopio_icon.png">
+
+  </head>
+
+  <body>
+    <header class="main_header">
+      <nav id="header" class="navbar navbar-expand-lg navbar-light background-custom pt-0 pb-0">
+        <div class="container container_custom_css">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="menu_button" class="btn main_buttons active_menu" aria-current="page" href="#">menu</a>
+              </li>
+              <li class="nav-item">
+                <a id="ventana_button" class="btn main_buttons" href="#">venta</a>
+              </li>
+              <li class="nav-item">
+                <a id="inventory_button" class="btn main_buttons" href="#">inventario</a>
+              </li>              
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+
+
+
+
+
+
+    <!-- La sección principal (recibirá su innerHTML a través de JavaScript: navigation.js ) -->
+    <main class="main">
+      <div id="main_content" class="container">
+
+        <!--COPIAR DESDE AQUÍ-->
+
+      </div>
+    </main>
+
+
+
+
+
+   
+    
+
+
+
+
+
+
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p href="#">Ayuda</p>
+          </div>
+          <div class="col-3 col-sm-2">
+            <p id="footer_ventas" href="#">Ventas: 0</p>            
+          </div>
+          <div class="col-3 col-sm-2">
+            <p id="footer_total" href="">En Caja: $100</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="./scripts/templates.js"></script>
+    <script src="./scripts/navigation.js"></script>
+
+    <!--Scripts de búsqueda (para ventas)-->
+    <script src="./searching-scripts/search.js"></script>
+    <script src="./searching-scripts/database.js"></script>
+
+    <!--Script de estilos-->
+    <script src="./scripts/styles.js"></script>
+
+    <!--Script de buffer (datos en memoria)-->
+    <script src="./scripts/buffer.js"></script>
+
+    <!--Script de funciones del inventario-->
+    <script src="./searching-scripts/inventory.js"></script>
+
+    <!--Script de impresión-->
+    <script src="./scripts/imprimir.js"></script>
+
+
+    <!--Script de las graficas de venta (chart.js)-->
+    <script src="./node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+
+    <!--Navegación dentro del inventario-->
+    <script src="./scripts/inventory_internal_navigation.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

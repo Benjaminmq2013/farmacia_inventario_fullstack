@@ -1,0 +1,489 @@
+figure{
+    margin: 0;
+}
+#footer {
+    background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+}
+
+.bd-indigo-200{
+    background-color:#6ea8fe;
+}
+.main_header{
+    height: 56px;
+}
+#header{
+    height: 100%;
+}
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    height: 100%;
+    align-items: flex-end;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.background-custom{
+    background-color: rgb(3,143, 244)
+}
+
+body{
+    height: 100vh !important;
+}
+.main_buttons{
+    background-color: rgb(247, 247, 247);  
+    width: 164px;  
+    border-radius: 10px;
+    height: 33px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    color: #5a5a5a;
+    padding: 0;
+    padding-top: 2px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#navbarSupportedContent{
+    height: 100%;
+    padding: 0 12%;
+}
+
+.container_custom_css{
+    height: 100%;
+}
+
+.main_buttons:hover{
+    border: 2px solid white;
+    border-bottom: 0;
+    background-color: transparent;
+    color: white;
+}
+.active_menu{
+    box-shadow: 0px 0px 6px rgb(41, 121, 196);  
+    background-color: rgb(13,110, 253);
+    border: 1px solid rgb(13, 98, 224);
+    /*border: 2px solid rgb(247, 247, 247);  opcional*/
+    color: white;
+}
+.active_menu:hover{
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+header{
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%);
+    position: relative;
+    z-index: 3;
+}
+
+/****************  Contenido Principal  ****************/
+
+
+/* Panel lateral Izquierdo */
+.fila_lateral{
+    border-bottom: 1px solid rgb(207, 207, 207);
+    cursor: pointer; 
+    transition: .3s; 
+    transition-timing-function: linear;  
+}
+.fila_lateral:hover{
+    background-color:  #e8eaed; 
+    transition: 0.2s;
+}
+.lateral_panel-icon{
+    height: 40px;
+    margin: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lateral_panel-icon img{
+    height: 90%;
+}
+
+#logout_lateral_icon-image{
+    height: 85%;
+    margin-top: 12%;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+
+.left_panel-container{
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0px 4px rgb(196, 196, 196);
+
+    
+}
+
+
+
+
+/* Estilos del menú Principal. */
+.main_menu-container{
+    margin: 5% 15% 5% 6%;
+}
+
+.menu_button{
+    height: 120px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu_button img{
+    height: 100%;
+}
+
+.main_buttons-title{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+}
+
+
+.main_logo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 8%;
+    margin-right: 8%;
+
+    height: 102px;
+}
+#forward_arrow-sell{
+    height: 80%;
+}
+#vender_btn-icon{
+    margin-left: 33px;
+}
+
+
+#forward_arrow-info{
+    height: 80%;
+}
+#info_image{
+    margin-left: 34px;
+}
+
+
+#forward_arrow-inventory{
+    height: 80%;
+}
+#inventory_image{
+    margin-left: 34px;
+}
+/* ESTILOS DE LA PLANTILLA DE VENTAS */
+
+.back_button-container{
+    height: 60px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+.back_button-container:hover{
+    transform:scale(1.2)
+}
+.back_button-container img{
+    height: 100%;
+}
+
+/* Barra de búsqueda */
+.search_wrapper{
+    width: 60%;
+}
+
+.recomendaciones_drop{
+    width: 83%;
+}
+
+
+/* ESTILOS DEL INVENTARIO */
+.inventory_input-container div{
+    width: 80%;
+}
+
+.inventory_input-container{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1400px){
+    .recomendaciones_drop{
+        width: 85%;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+    .search_wrapper{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .recomendaciones_drop{
+        width: 75%;
+    }
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+.custom_spinner-css{
+    height: 28px;
+    width: 28px;
+    opacity: 0;
+}
+.custom_spinner-css span{
+    height: inherit;
+    width: inherit;
+}
+
+.btn_cerrar_venta-container{
+    width: 100%;
+    padding-right: 5%;
+    flex-direction: column;
+    align-items: center;
+}
+.printing-signal{
+    height: 10px;
+    width: 10px;
+}
+.printing-advice{
+    margin-left: 22px;
+    opacity: 0;
+}
+
+#logout_icon{
+    height: 25px;
+    width: 25px;
+    margin-bottom: 2px;
+}
+
+#inventory_table_container{
+    max-height: 400px;
+    overflow: scroll;
+}
+.table_container{
+    max-height: 246px;
+    overflow: auto;
+}
+
+/* ESTILOS DEL INVENTARIO */
+.db_edit_icon{
+    height: 25px;
+    cursor: pointer;
+}
+
+.db_add_icon{
+    height: 25px;
+    cursor: pointer;
+}
+
+.db_delete_icon{
+    height: 25px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+l.search_result-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prediction_1, .prediction_2, .prediction_3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prediction_1, .prediction_2, .prediction_3 p{
+    margin: 0;
+}
+
+ul li p{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************  ESTILOS PARA PRUEBA DEL TICKET  **************************/
+body{
+    margin: 0;
+}
+.ticket_container_prueba{
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    z-index: 3;
+    position: absolute;
+    left:0;
+    top: 0;
+    
+    
+}
+
+/*ESTILOS DEL TICKET*/
+
+.ticket_wrapper{
+    position: relative;
+    min-height: 288px;    
+}
+
+.fecha_venta{
+    margin-top: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ticket_title{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ticket_location{
+    font-size: 12px;
+    margin: 0;
+}
+
+.ticket_date{
+    font-size: 14px;
+    margin: 0;
+}
+
+.detalles_venta{
+    display: flex;    
+    padding: 0 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 14px;
+}
+
+.detalles_venta h6{
+    font-size: 14px;
+    margin: 0;
+}
+
+.ticket_product_component{
+    border-bottom: 1px solid black;
+    padding: 0 10px;
+    display: flex;
+    font-size: 14px;
+}
+
+.cantidad_container{
+    width: 25%;
+}
+.producto_container{
+    width: 60%;
+}
+
+.precio_container{
+    width: 15%;
+    text-align: right;
+}
+.facturacion_ticket{
+    display: flex;
+    font-size: 14px;
+    height: 31px;
+}
+.facturacion_titulo{
+    width: 85%;
+    text-align: center;
+    padding-left: 10px;
+}
+.ticket_footer{
+    font-size: 14px;
+    text-align: center;
+}
+.ticket_el_cielo{
+    font-size: 13px;
+    margin: 0;
+}
+.ticket_agradecimientos{
+    margin: 0;
+}
+
+.cant_container{
+    width: 25%;
+}
+.prod_container{
+    width: 60%;
+}
+
+.prec_container{
+    width: 15%;
+}
+
+.facturacion_wrapper{
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+
+.no-display{
+    display: none;
+}
+.ticket_logo img{
+    height: 117px;
+}
+
+.ticket_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total p{
+    margin: 0;
+}
+
+#seleccion{
+    position: absolute;
+}
+
+
+
+
+
+/*ESTILOS DEL FOOTER*/
+footer p{
+    color: rgb(219, 219, 219);
+    margin: 0;
+    font-weight: 500;
+}
+
+footer p:hover{
+    color: rgb(219, 219, 219);
+}

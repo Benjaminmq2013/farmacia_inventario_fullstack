@@ -1,0 +1,113 @@
+@media screen and (min-width: 1366px){
+    .left_panel-container{
+        height: 87vh;
+    }
+}
+@media screen and (max-width:1024px){
+    #main_content{        
+        max-width: 899px;
+    }
+    .main_menu-container {
+        margin: 7% 7% 5% 3%;
+    }
+    .navbar-collapse ul{
+        flex-direction:row;
+        margin-top: 10px;
+    }
+    .left_panel-container{
+        height: 87vh;
+    }
+}
+
+@media screen and (max-width:767px){
+    .navbar-collapse ul{
+        flex-direction:column;
+        
+        align-items: center;
+    }
+
+    .navbar-collapse ul li{
+        margin-top: 10px;
+    }
+    .menu_principal_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left_panel-container{
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        overflow: auto;
+    }
+    .fila_lateral{
+        flex-direction: column;
+        width: 192px;
+    }
+    .lateral_panel-icon{
+        border-radius: 50px;
+        background-color:#e8eaed;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_menu-container{
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 25px;
+    }
+    .container_custom-width{
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 0;
+        max-width: initial;
+        width: 100%;
+    }
+    .col1_custom-zindex{
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width:480px){
+    .menu_button img {
+        height: 100%;
+        margin-left: 0;
+    }
+    .menu_buttons_container{
+        padding-left: 0;
+        padding-right: 0;
+        width: 50vw!important;
+    }
+    .menu_button{
+        height: 90px;
+        text-align: center;
+    }
+    .main_menu-container {
+        margin: 9% 0% 5% 3%;
+        
+        /*width: 309px;*/
+        padding-right: 0;
+        margin-left: 0!important;
+        padding-right:11%;
+        padding-left:  6%;
+    }
+    .menu_principal_container{
+        overflow: hidden;
+    }
+    .main_logo{
+        margin-bottom: 14%;
+        margin-right: 4%;
+        height: 64px;
+    }
+    
+}
+
+@media screen and (max-width:370px){
+    .main_logo{
+        height: 76px;
+        margin-bottom: 19%;
+    }
+
+}
