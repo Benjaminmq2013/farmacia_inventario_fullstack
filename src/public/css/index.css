@@ -14,13 +14,13 @@ figure{
 #header{
     height: 100%;
 }
+
 header ul{
     width: 100%;
     display: flex;
     justify-content: space-around;
     
     height: 100%;
-    align-items: flex-end;
 }
 .nav-item{
     display: flex;
@@ -35,17 +35,16 @@ body{
     height: 100vh !important;
 }
 .main_buttons{
-    background-color: rgb(247, 247, 247);  
-    width: 164px;  
-    border-radius: 10px;
+    width: 109px; 
     height: 33px;
-    border: 2px solid transparent;
+    border-bottom: 2px solid #f1f1f1;
     font-weight: 600;
-    color: #5a5a5a;
+    color: #f1f1f1;
     padding: 0;
     padding-top: 2px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    padding-bottom: 31px;
 }
 
 #navbarSupportedContent{
@@ -58,24 +57,22 @@ body{
 }
 
 .main_buttons:hover{
-    border: 2px solid white;
-    border-bottom: 0;
     background-color: transparent;
     color: white;
 }
 .active_menu{
-    box-shadow: 0px 0px 6px rgb(41, 121, 196);  
-    background-color: rgb(13,110, 253);
-    border: 1px solid rgb(13, 98, 224);
-    /*border: 2px solid rgb(247, 247, 247);  opcional*/
-    color: white;
+    border-bottom: 2px solid #f1f1f1;
 }
 .active_menu:hover{
     color: white;
 }
-
+.active_menu_title{
+    font-size: 25px;
+    color: #535353;
+    margin: 0;
+}
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -92,10 +89,13 @@ header{
 
 /* Panel lateral Izquierdo */
 .fila_lateral{
-    border-bottom: 1px solid rgb(207, 207, 207);
     cursor: pointer; 
     transition: .3s; 
     transition-timing-function: linear;  
+    height: 60px;
+    margin-right:40px;
+    border-radius: 8px;
+    margin-top:6px;
 }
 .fila_lateral:hover{
     background-color:  #e8eaed; 
@@ -106,6 +106,11 @@ header{
     margin: 5px;
     margin-left: 10px;
     cursor: pointer;
+}
+.fila_lateral label{
+    font-size:19px;
+    font-weight: 500;
+
 }
 
 .lateral_panel-icon img{
@@ -121,71 +126,106 @@ header{
 
 
 .left_panel-container{
-    background-color: #f5f5f5;
     position: relative;
     z-index: 1;
-    box-shadow: 0px 0px 4px rgb(196, 196, 196);
 
     
 }
-
-
+.left_options_container{
+    width: 324px;
+    height: 361px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.212);
+    border-radius:23px;
+    padding-top:30px;
+    padding-left:28px;
+    background-color: #F8F8F8;
+    margin-left:13px;
+}
+.logo_left_container{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.212);
+    border-radius: 23px;
+    margin: 28px 0 17px 13;
+}
 
 
 /* Estilos del menú Principal. */
 .main_menu-container{
-    margin: 5% 15% 5% 6%;
+    margin: 18px 131px 5% 30px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.212);
+    width:867px;
+    height: 539px;
+    border-radius: 23px;
+    padding: 0 143px;
 }
 
 .menu_button{
-    height: 120px;
-    margin-bottom: 10px;
+    margin-bottom: 63px;
     cursor: pointer;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 178px;
+    height: 162px;
+    justify-content: center;
+    border-radius:28px;
 }
 
-.menu_button img{
-    height: 100%;
-}
 
 .main_buttons-title{
     text-decoration: none;
     cursor: pointer;
-    color: rgb(12, 12, 12);
+    color: #3D3D3D;
+    font-weight: 500;
+    font-size: 22px;
+
+    margin-top: 7px;
+    margin-bottom: -8px;
 }
 
 
-.main_logo{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 8%;
-    margin-right: 8%;
+.main_logo{        
+    width: 230;
+    height: 73;
+    margin: 18 61px 19 28px;
+}
 
-    height: 102px;
-}
-#forward_arrow-sell{
-    height: 80%;
-}
 #vender_btn-icon{
-    margin-left: 33px;
+    height: 74px;
+    width: 84px;
 }
 
 
-#forward_arrow-info{
-    height: 80%;
-}
+
 #info_image{
-    margin-left: 34px;
+    height: 74px;
+    width: 74px;
 }
 
 
-#forward_arrow-inventory{
-    height: 80%;
-}
+
 #inventory_image{
-    margin-left: 34px;
+    height: 74px;
+    width: 74px;
 }
 /* ESTILOS DE LA PLANTILLA DE VENTAS */
+.menu_icon_title{
+    height: 34px;
+    width: 36px;
+    margin-right: 11px;
+}
+.menu_title_container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom:40px;
+}
+
+.menu_buttons_container{
+    display: flex;
+    justify-content:center;
+}
 
 .back_button-container{
     height: 60px;
@@ -199,6 +239,9 @@ header{
 .back_button-container img{
     height: 100%;
 }
+.menu_principal_container{
+    --bs-gutter-x: initial;
+}
 
 /* Barra de búsqueda */
 .search_wrapper{
@@ -211,15 +254,59 @@ header{
 
 
 /* ESTILOS DEL INVENTARIO */
+.inventory_container{
+    height: 539px;
+    width:867;
+    margin: 18px 131px 5% 30px;
+    padding: 0 53px 56px 72px ;
+    box-shadow: 0px 0px 6px rgb(0 0 0 / 21%);
+    border-radius: 23px;
+    --bs-gutter-x: initial;
+    --bs-gutter-y: initial;
+    flex: initial;
+}
+.inventory_title_container img{
+    width:36px;
+    height:34px;
+    margin-top: 15px;
+    margin-right: 13px;
+}
+.inventory_title_container{
+    display: flex;    
+    align-items:center;
+    justify-content:center;
+}
+.inventory_title_container h2{
+    font-size: 25px;
+    color: #535353;
+    margin-right:25px;
+}
+.inventory_wrapper_styles{
+    --bs-gutter-x: initial;
+    --bs-gutter-y: initial;
+    flex-wrap: nowrap;
+}
 .inventory_input-container div{
     width: 80%;
 }
-
+#inventory_search_input{
+    height: 32px;
+    width: 421px;
+    flex: initial;
+    font-size: 14px;
+}
 .inventory_input-container{
     display: flex;
     justify-content: center;
+    height:32px;
 }
-
+#input_group_styling{
+    width:70%;
+}
+#inventory_search_btn{
+    padding: 0.75% 1.7%;
+    font-size: 14px;
+}
 @media screen and (min-width: 1400px){
     .recomendaciones_drop{
         width: 85%;
@@ -276,7 +363,7 @@ body{
 }
 
 #inventory_table_container{
-    max-height: 400px;
+    max-height: 365px;
     overflow: scroll;
 }
 .table_container{
@@ -286,17 +373,17 @@ body{
 
 /* ESTILOS DEL INVENTARIO */
 .db_edit_icon{
-    height: 25px;
+    height: 21px;
     cursor: pointer;
 }
 
 .db_add_icon{
-    height: 25px;
+    height: 21px;
     cursor: pointer;
 }
 
 .db_delete_icon{
-    height: 25px;
+    height: 21px;
     margin-left: 14px;
     cursor: pointer;
 }

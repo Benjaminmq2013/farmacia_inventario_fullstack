@@ -19,58 +19,7 @@ function activar_navegacion_inventario (){
     
 }
 
-const existencias_inventory_content = (`
-    <h2 class="text-center mt-4">Existencias</h2>
-
-    <div class="container inventory_input-container mt-4">
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="inventory_search_btn">Buscar</span>
-            <input id="inventory_search_input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Buscar por nombre...">
-        </div>
-    </div>
-
-
-    <div id="inventory_table_container" class="container table_container mt-2">
-        <div class="table-responsive">
-            <table class="table">
-
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Marca</th>
-                        <th scope="col">Código</th>
-                        <th scope="col">$Compra</th>
-                        <th scope="col">$Venta</th>              
-                        <th scope="col">Existencias</th>
-                        <th scope="col">Opciones</th>
-                    </tr>
-                </thead>
-                
-                <tbody id="inventory_tbody">
-
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-
-                        <td>
-                            <img class="db_edit_icon" src="./assets/database/edit_product.png" alt="">
-                            <img class="db_add_icon ms-3" src="./assets/database/add_dark_icon.png" alt="">
-                            <img class="db_delete_icon" src="./assets/database/close_dark_icon.png" alt="">
-                        </td>                   
-
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
-    </div>   
-
-`)
+const existencias_inventory_content = (table_content) //Table_content está en templates.js
 
 
 

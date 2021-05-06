@@ -81,16 +81,16 @@ function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, 
     const contenido = (`
         <th scope="row">${inventory_product_number}</th>
         <td>${inventory_product_name}</td>
-        <td>Cell</td>
-        <td>Cell</td>
-        <td>Cell</td>
+        <td>Null</td>
+        <td>Null</td>
+        <td>Null</td>
         <td>$${inventory_product_$venta}</td>
-        <td>Cell</td>
+        <td>Null</td>
 
         <td>
-        <img class="db_edit_icon" src="./assets/database/edit_product.png" alt="">
-        <img class="db_add_icon ms-3" src="./assets/database/add_dark_icon.png" alt="">
-        <img class="db_delete_icon" src="./assets/database/close_dark_icon.png" alt="">
+            <img class="db_edit_icon" src="./assets/database/edit_product.png" alt="">
+            <img class="db_add_icon ms-3" src="./assets/database/add_dark_icon.png" alt="">
+            <img class="db_delete_icon" src="./assets/database/close_dark_icon.png" alt="">
         </td>
     `)
 
