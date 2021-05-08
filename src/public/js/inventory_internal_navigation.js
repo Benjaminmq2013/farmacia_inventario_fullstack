@@ -15,6 +15,11 @@ function activar_navegacion_inventario (){
         statistics_management()
     })
     //Botón ESTADÍSTICAS
+
+
+    // Botón regresar al menú
+    let main_logo = document.querySelector(".main_logo")
+    main_logo.addEventListener("click", mostrar_menu)
     
     
 }

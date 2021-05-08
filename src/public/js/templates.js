@@ -11,7 +11,9 @@ const menu_window = (`
 
             <div class="logo_left_container">
               <div  class=" d-flex align-items-center">
-                <img class="main_logo" src="./assets/logo_recortado.png" alt="">
+                <a href="/">
+                  <img class="main_logo" src="./assets/logo_recortado.png" alt="">
+                </a>
               </div>
             </div>
 
