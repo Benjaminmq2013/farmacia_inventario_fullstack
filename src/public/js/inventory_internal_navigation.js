@@ -22,10 +22,15 @@ function activar_navegacion_inventario (){
 const existencias_inventory_content = (table_content) //Table_content está en templates.js
 
 
-
 const estadisticas_inventory_content = (`
+    <div class="row menu_title">
+        <div class="menu_title_container">
+            <img src="assets/chart_icon.png" alt="" class="menu_icon_title">
+            <h2 class="active_menu_title">Total de ventas de esta semana</h2>
+        </div>
+    </div>
     <div class="container grafica_contenedor">
-        <canvas id="myChart"></canvas>
+        <canvas id="myChart" ></canvas>
     </div>
 
 
@@ -38,7 +43,7 @@ const estadisticas_inventory_content = (`
     <!-- BOOTSTRAP ACCORDION -->
     <!--Lista de las ventas del día:-->
 
-    <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion accordion-flush accordion_custom_css mt-4" id="accordionFlushExample">
 
         <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">

@@ -19,12 +19,12 @@ const menu_window = (`
             <div class="left_options_container">
               <div class="fila_lateral d-flex align-items-center">
                 <figure class="lateral_panel-icon">
-                    <img src="./assets/user_icon.png" alt="UsrImage">
+                    <img src="./assets/pharmacy.png" alt="UsrImage">
                 </figure>
-                <label>Usuario</label>
+                <label>Menu</label>
               </div>
 
-              <div class="fila_lateral d-flex align-items-center">
+              <div class="fila_lateral d-flex align-items-center op_selected">
                   <figure class="lateral_panel-icon">
                       <img src="./assets/settings_icon.png" alt="Ajustes">
                   </figure>

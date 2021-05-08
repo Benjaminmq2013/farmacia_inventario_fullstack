@@ -560,8 +560,13 @@ body{
     position: absolute;
 }
 
+.accordion_custom_css{
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
 
-
+#myChart{
+    height:310px !important;
+}
 
 
 /*ESTILOS DEL FOOTER*/
