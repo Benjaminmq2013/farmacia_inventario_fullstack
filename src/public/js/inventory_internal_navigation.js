@@ -182,7 +182,7 @@ function add_product_management(){
     })
 
 
-    let url = ("http://"+ window.location.host+ "/medicines")
+    let url = ("https://"+ window.location.host+ "/medicines")
 
     const productName = document.getElementById("productName")
     const productCodeBar = document.getElementById("productCodeBar")
