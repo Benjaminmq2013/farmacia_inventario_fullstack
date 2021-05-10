@@ -5,7 +5,7 @@ const controller = require("./controller")
 
 
 router.post("/", (req, res)=>{
-    console.log(req.method)
+    console.log(req.method, req.body)
 
     controller.addMedicines(req.body.productName, req.body.productCodeBar, req.body.productBuyingPrice, req.body.productSellingPrice, req.body.productInStock, req.body.productBrand)
         .then(data =>{

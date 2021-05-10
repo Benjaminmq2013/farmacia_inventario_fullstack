@@ -264,6 +264,7 @@ header{
     --bs-gutter-x: initial;
     --bs-gutter-y: initial;
     flex: initial;
+    position: relative;
 }
 .inventory_title_container img{
     width:36px;
@@ -566,6 +567,112 @@ body{
 
 #myChart{
     height:310px !important;
+}
+
+/* ESTILOS DE LA PESTAÑA CREAR PRODUCTO*/
+#add_produt_tab_icon{
+    height: 44px;
+    width:44px;
+}
+
+.reabastecer-btn{
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #B15F17;
+}
+    
+.add_product_title h3{
+    color: #535353;
+    font-size: 25px;
+    font-weight: 600;
+    margin-right: 50px;
+}
+.add_product_title a{
+    color: #1777B1;
+}
+
+#productName{
+    height: 29px;
+    width: 230px;
+    border-radius: 6px;
+    border: 2px solid #8CABAE;
+    margin-left: 50px;
+}
+
+#productCodeBar{
+    height: 29px;
+    width: 230px;
+    border-radius: 6px;
+    border: 2px solid #8CABAE;
+    margin-left: 57px;
+}
+
+#productBuyingPrice{
+    height: 29px;
+    width: 101px;
+    border-radius: 6px;
+    border: 2px solid #8CABAE;
+    margin-left: 88px;
+}
+#productSellingPrice{
+    height: 29px;
+    width: 101px;
+    border-radius: 6px;
+    border: 2px solid #8CABAE;
+    margin-left: 105px;
+}
+
+#productInStock{
+    height: 29px;
+    width: 101px;
+    border-radius: 6px;
+    border: 2px solid #8CABAE;
+    margin-left: 64px;
+}
+
+#productBrand{
+    height: 29px;
+    width: 101px;
+    border-radius: 6px;
+    border: 2px solid #8CABAE;
+    margin-left: 24px;
+}
+
+#add_btn{
+    width: 222px;
+    height: 45px;
+    background-color: #F67C2D;
+    border: none;
+    border-radius: 5px;
+    color: #F5F5F5;
+    font-size: 20px;
+    font-weight: 500
+}
+
+#send_medicines_form label{
+    font-size: 18px;
+    color: #535353;
+    font-weight: 500;
+}
+
+.añadir_productos_contenedor{
+    margin-top: 56px;
+    padding-left: 74px;
+}
+.add_item_right{
+    margin-left: 44px;
+}
+.send_medicines_btn_container{
+    display: flex;
+    justify-content:center;
+    margin-right: 146px;
+    margin-top: 71px;
+}
+
+.form_item{
+    margin-top: 20px; 
 }
 
 

@@ -20,23 +20,23 @@ function inventory_management(){
         } else{
             for (let count = 0; count < medicamentos_inventory.length; count++) {
             
-                if (comparar_producto_inventario(inventory_search_btn.value, medicamentos_inventory[count].nombre)){
+                if (comparar_producto_inventario(inventory_search_btn.value, medicamentos_inventory[count].productName)){
                     inventory_products[count_save++] = medicamentos_inventory[count]
                 }
             }
         }
         
 
-        //console.log(inventory_products)
+        // console.log(inventory_products)
         inventory_tbody.innerHTML = ""
-        construir_tablas_inventario(inventory_products)
+        construir_tablas_inventario(inventory_products)  //Probar pasando "medicamentos" Directamente.
     }
 
     function comparar_producto_inventario(inventory_input, medicamento_nombre){
         if (inventory_input == ""){
             console.log("La búsqueda está vacía")
         } else {
-            return medicamento_nombre.toUpperCase().startsWith(inventory_input.toUpperCase()) //Comparando input con medicamentos.nombre   
+            return medicamento_nombre.toUpperCase().startsWith(inventory_input.toUpperCase()) //Comparando input con medicamentos.productName   
         }
     }
     
@@ -59,8 +59,8 @@ function inventory_management(){
 
         for (let count = 0; count < inventory_products.length; count++) {
             
-            inventory_product_name = inventory_products[count].nombre;
-            inventory_product_$venta = inventory_products[count].precio;
+            inventory_product_name = inventory_products[count].productName;
+            inventory_product_$venta = inventory_products[count].productSellingPrice;
             inventory_product_number ++;            
             //console.log(inventory_products)
             agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number)

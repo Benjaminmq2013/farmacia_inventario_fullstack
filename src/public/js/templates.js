@@ -308,7 +308,7 @@ const inventory_window=(`
           <label>Existencias</label>
         </div>
 
-          <div class="fila_lateral d-flex align-items-center">
+          <div id="addproduct_inventario_btn" class="fila_lateral d-flex align-items-center">
             <figure class="lateral_panel-icon">
                 <img src="./assets/plus_icon-orange.png" alt="">
             </figure>
