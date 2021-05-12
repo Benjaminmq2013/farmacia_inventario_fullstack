@@ -6,7 +6,7 @@ function activar_navegacion_inventario (){
     existencias_inventario_btn.addEventListener("click", ()=>{
         inventory_container.innerHTML = existencias_inventory_content;
         //Activando funciones del inventario (origen en inventory.js)
-        inventory_management()
+        updateDB()
     })
 
     //  Botón ESTADÍSTICAS
@@ -182,7 +182,7 @@ function add_product_management(){
     })
 
 
-    let url = ("https://"+ window.location.host+ "/medicines")
+    let medicinesURL = (window.location.origin + "/medicines")
 
     const productName = document.getElementById("productName")
     const productCodeBar = document.getElementById("productCodeBar")
@@ -203,7 +203,7 @@ function add_product_management(){
         }
         console.log(medicines)
 
-        fetch(url, {
+        fetch(medicinesURL, {
             method: "POST",
             mode: "cors",
             cache: "no-cache",

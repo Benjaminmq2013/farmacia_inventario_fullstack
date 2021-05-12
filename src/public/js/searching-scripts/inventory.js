@@ -48,11 +48,13 @@ function inventory_management(){
     function construir_tablas_inventario(inventory_products){
         // DATOS DE PRODUCTOS PARA EL INVENTARIO
         let inventory_product_number = 0;
+
         let inventory_product_name = ""
         let inventory_product_$compra = 0;
         let inventory_product_$venta = 0;
         let inventory_product_existencias = 1;
-
+        let inventory_product_brand = "";
+        let inventory_product_barcode = 00;
 
 
 
@@ -61,9 +63,16 @@ function inventory_management(){
             
             inventory_product_name = inventory_products[count].productName;
             inventory_product_$venta = inventory_products[count].productSellingPrice;
-            inventory_product_number ++;            
+            inventory_product_number ++;
+
+            inventory_product_brand = inventory_products[count].productBrand;
+            inventory_product_barcode = inventory_products[count].productCodeBar;
+            inventory_product_$compra = inventory_products[count].productBuyingPrice;
+            inventory_product_existencias = inventory_products[count].productInStock;
+
+
             //console.log(inventory_products)
-            agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number)
+            agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number, inventory_product_brand, inventory_product_barcode, inventory_product_$compra, inventory_product_existencias)
         }
 
 
@@ -76,16 +85,16 @@ function inventory_management(){
 
 /* CONSTRUYENDO TABLAS PARA EL INVENTARIO */
 
-function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number){
+function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, inventory_product_number, inventory_product_brand, inventory_product_barcode, inventory_product_$compra, inventory_product_existencias){
     const inventory_tbody = document.getElementById("inventory_tbody") //Marco de las tablas
     const contenido = (`
         <th scope="row">${inventory_product_number}</th>
         <td>${inventory_product_name}</td>
-        <td>Null</td>
-        <td>Null</td>
-        <td>Null</td>
+        <td>${inventory_product_brand}</td>
+        <td>${inventory_product_barcode}</td>
+        <td>$${inventory_product_$compra}</td>
         <td>$${inventory_product_$venta}</td>
-        <td>Null</td>
+        <td>${inventory_product_existencias}</td>
 
         <td>
             <img class="db_edit_icon" src="./assets/database/edit_product.png" alt="">

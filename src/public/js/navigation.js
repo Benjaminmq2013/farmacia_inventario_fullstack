@@ -77,7 +77,8 @@ function mostrar_inventario(){
     menu_button.classList.remove("active_menu")
 
     //Activando funciones del inventario (origen en inventory.js)
-    inventory_management()
+    renderizarInventario = true;
+    updateDB();
 
 
     //Activando funciones de navegación interna del inventario.

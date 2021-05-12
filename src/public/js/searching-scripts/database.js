@@ -1,27 +1,50 @@
 //CONSTRUYENDO BASE DE DATOS LOCAL
+let url = (window.location.origin + "/medicines")
+let medicamentos ;
+let renderizarInventario = false;
 
+function updateDB(){
+    fetch(url, {
+        method: "GET", 
+        mode: "cors",
+        cache: "no-cache",
+        credentials: "same-origin",
+    })
+        .then(response => response.json())
+        .then((data) => {
+            medicamentos = data.body;
+            if(renderizarInventario){
+                inventory_management()
+            }
 
-
-var ateconol = {
-    productName: 'Ateconol',
-    productCodeBar: 1234324,
-    productBuyingPrice: 20,
-    productSellingPrice: 20.89,
-    productInStock: 200,
-    productBrand: "mediheath"
+        })
+        .catch(err => console.error(err))
 }
-var atropina = {
-    productName: 'Atropia',
-    productCodeBar: 1234324,
-    productBuyingPrice: 20,
-    productSellingPrice: 20.89,
-    productInStock: 200,
-    productBrand: "medihealth"
-}
+
+updateDB()
 
 
 
-let medicamentos = [ ateconol, atropina ]
+// var ateconol = {
+//     productName: 'Ateconol',
+//     productCodeBar: 1234324,
+//     productBuyingPrice: 20,
+//     productSellingPrice: 20.89,
+//     productInStock: 200,
+//     productBrand: "mediheath"
+// }
+// var atropina = {
+//     productName: 'Atropia',
+//     productCodeBar: 1234324,
+//     productBuyingPrice: 20,
+//     productSellingPrice: 20.89,
+//     productInStock: 200,
+//     productBrand: "medihealth"
+// }
+
+
+
+// let medicamentos = [ ateconol, atropina ]
 
 
 

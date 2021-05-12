@@ -374,17 +374,17 @@ body{
 
 /* ESTILOS DEL INVENTARIO */
 .db_edit_icon{
-    height: 21px;
+    height: 17px;
     cursor: pointer;
 }
 
 .db_add_icon{
-    height: 21px;
+    height: 17px;
     cursor: pointer;
 }
 
 .db_delete_icon{
-    height: 21px;
+    height: 17px;
     margin-left: 14px;
     cursor: pointer;
 }
