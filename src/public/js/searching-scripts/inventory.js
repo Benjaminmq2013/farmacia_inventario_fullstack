@@ -92,14 +92,14 @@ function agregar_tabla_prueba(inventory_product_name, inventory_product_$venta, 
         <td>${inventory_product_name}</td>
         <td>${inventory_product_brand}</td>
         <td>${inventory_product_barcode}</td>
-        <td>$${inventory_product_$compra}</td>
-        <td>$${inventory_product_$venta}</td>
-        <td>${inventory_product_existencias}</td>
+        <td class="text-center">$${inventory_product_$compra}</td>
+        <td class="text-center">$${inventory_product_$venta}</td>
+        <td class="text-center">${inventory_product_existencias}</td>
 
         <td>
             <img class="db_edit_icon" src="./assets/database/edit_product.png" alt="">
-            <img class="db_add_icon ms-3" src="./assets/database/add_dark_icon.png" alt="">
-            <img class="db_delete_icon" src="./assets/database/close_dark_icon.png" alt="">
+            <img class="db_add_icon ms-1" src="./assets/database/add_dark_icon.png" alt="">
+            <img class="db_delete_icon ms-1" src="./assets/database/close_dark_icon.png" alt="">
         </td>
     `)
 

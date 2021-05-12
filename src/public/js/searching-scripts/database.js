@@ -25,29 +25,6 @@ updateDB()
 
 
 
-// var ateconol = {
-//     productName: 'Ateconol',
-//     productCodeBar: 1234324,
-//     productBuyingPrice: 20,
-//     productSellingPrice: 20.89,
-//     productInStock: 200,
-//     productBrand: "mediheath"
-// }
-// var atropina = {
-//     productName: 'Atropia',
-//     productCodeBar: 1234324,
-//     productBuyingPrice: 20,
-//     productSellingPrice: 20.89,
-//     productInStock: 200,
-//     productBrand: "medihealth"
-// }
-
-
-
-// let medicamentos = [ ateconol, atropina ]
-
-
-
 
 
 
