@@ -112,6 +112,18 @@ header{
     font-weight: 500;
 
 }
+.fila_ajustes{
+    opacity: 0.5;
+}
+.fila_empleados{
+    opacity: 0.5;
+}
+.fila_logout{
+    opacity: 0.5;
+}
+.fila_crear_ofertas{
+    opacity: 0.5;
+}
 
 .lateral_panel-icon img{
     height: 90%;

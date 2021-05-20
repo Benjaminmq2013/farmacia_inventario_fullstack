@@ -26,21 +26,21 @@ const menu_window = (`
                 <label>Menu</label>
               </div>
 
-              <div class="fila_lateral d-flex align-items-center op_selected">
+              <div class="fila_lateral fila_ajustes d-flex align-items-center op_selected">
                   <figure class="lateral_panel-icon">
                       <img src="./assets/settings_icon.png" alt="Ajustes">
                   </figure>
                   <label>Ajustes</label>                
               </div>
 
-              <div class="fila_lateral d-flex align-items-center">
+              <div class="fila_lateral fila_empleados d-flex align-items-center">
                   <figure class="lateral_panel-icon">
                       <img src="./assets/users_icon.png" alt="Empleados">
                   </figure>
                   <label>Empleados</label>
               </div>
 
-              <div class="fila_lateral d-flex align-items-center">
+              <div class="fila_lateral fila_logout d-flex align-items-center">
                   <figure class="lateral_panel-icon">
                       <img id="logout_lateral_icon-image" src="./assets/logout_icon.png" alt="Logout">
                   </figure>
@@ -315,7 +315,7 @@ const inventory_window=(`
             <label>Añadir Producto</label>
           </div>
 
-          <div class="fila_lateral d-flex align-items-center">
+          <div class="fila_lateral fila_crear_ofertas d-flex align-items-center">
             <figure class="lateral_panel-icon">
                 <img src="./assets/offer.png" alt="">
             </figure>
