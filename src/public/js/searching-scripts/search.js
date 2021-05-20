@@ -47,7 +47,8 @@ function callback_activate_search(){
                 
                 if (pred_num <= 4){
                     prediction_number.innerHTML = contenido_seleccionado;    
-                    tres_prod_seleccionados[pred_num] =(medicamentos[i])            
+                    tres_prod_seleccionados[pred_num] = (medicamentos[i])  
+                           
                 }
 
             }              
@@ -83,8 +84,8 @@ function callback_activate_search(){
 
             //Asignando valores para crear la tabla
             
-            compra_name = tres_prod_seleccionados[2].nombre;
-            compra_price = tres_prod_seleccionados[2].precio;
+            compra_name = tres_prod_seleccionados[2].productName;
+            compra_price = tres_prod_seleccionados[2].productSellingPrice;
 
             añadir_producto_ticket(tres_prod_seleccionados[2]) //Construyendo ticket (origen en imprimir.js)
         }    
@@ -101,8 +102,8 @@ function callback_activate_search(){
             prediction_input.value = prediction_number_2.innerHTML;
            
             
-            compra_name = tres_prod_seleccionados[3].nombre;
-            compra_price = tres_prod_seleccionados[3].precio;  
+            compra_name = tres_prod_seleccionados[3].productName;
+            compra_price = tres_prod_seleccionados[3].productSellingPrice;  
             añadir_producto_ticket(tres_prod_seleccionados[3]) //Construyendo ticket (origen en imprimir.js)
         }
         console.log(compra_name)
@@ -119,8 +120,8 @@ function callback_activate_search(){
             prediction_input.value = prediction_number_3.innerHTML;
 
             
-            compra_name = tres_prod_seleccionados[4].nombre;  
-            compra_price = tres_prod_seleccionados[4].precio;
+            compra_name = tres_prod_seleccionados[4].productName;  
+            compra_price = tres_prod_seleccionados[4].productSellingPrice;
 
             añadir_producto_ticket(tres_prod_seleccionados[4]) //Construyendo ticket (origen en imprimir.js)
         }      

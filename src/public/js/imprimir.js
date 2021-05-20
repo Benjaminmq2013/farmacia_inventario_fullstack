@@ -30,10 +30,9 @@ function añadir_producto_ticket (tres_prod_seleccionados){
         if (tres_prod_seleccionados == undefined){
             console.log("Error producto vacío evitado correctamente")
         } else{
-            let product_name = tres_prod_seleccionados.nombre;
-            let product_price = tres_prod_seleccionados.precio;
-            let product_quantity = cuenta_num;
-            
+            let product_name = tres_prod_seleccionados.productName;
+            let product_price = tres_prod_seleccionados.productSellingPrice;
+            let product_quantity = cuenta_num;   
             console.log(tres_prod_seleccionados)
       
             let product_component = `
