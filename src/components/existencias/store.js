@@ -10,8 +10,14 @@ async function listMedicines(){
     return medicines;
 }
 
+function removeMessage(id){
+    return Model.deleteOne({
+        _id: id
+    })
+}
 
 module.exports = {
     add: addMedicines,
     list: listMedicines,
+    remove: removeMessage
 }

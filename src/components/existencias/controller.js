@@ -28,7 +28,24 @@ function getMedicines(){
     })
 }
 
+function deleteMedicine(id){
+    return new Promise((resolve, reject)=>{
+        if(!id){
+            reject("Id Invalido")
+            return false;
+        }
+        store.remove(id)
+        .then(()=>{
+            resolve()
+        })
+        .catch(e =>{
+            reject()
+        })
+    })
+}
+
 module.exports = {
     addMedicines,
-    getMedicines
+    getMedicines,
+    deleteMedicine
 }

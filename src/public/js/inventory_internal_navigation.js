@@ -177,8 +177,9 @@ function statistics_management(){
 function add_product_management(){
     const add_btn = document.getElementById("add_btn")
     add_btn.addEventListener("click", (e)=>{
-        e.preventDefault()
+        e.preventDefault()        
         saveProducts()
+        send_medicines_form.reset()
     })
 
 

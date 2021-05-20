@@ -26,4 +26,14 @@ router.get("/", (req, res)=>{
         })
 })
 
+router.delete("/", (req, res)=>{
+    controller.deleteMedicine(req.body._id)
+        .then(() =>{
+            response.success(req, res, `Medicamento ${req.body._id} eliminado`, 200)
+        })
+        .catch(e =>{
+            response.error(req, res, "Error Interno", 500, e)
+        })
+})
+
 module.exports = router;
